@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="me.sgeb.opencash.vendor" module="libodb-sqlite" revision="2.3.0" status="integration" publication="20140117224809"/>
+  <configurations/>
+  <publications>
+    <artifact name="libodb-sqlite" type="nar" ext="nar" m:classifier="x86_64-apple-darwin13.0.0"/>
+    <artifact name="libodb-sqlite" type="nar" ext="nar" m:classifier="arm-linux-androideabi"/>
+  </publications>
+  <dependencies/>
+</ivy-module>
