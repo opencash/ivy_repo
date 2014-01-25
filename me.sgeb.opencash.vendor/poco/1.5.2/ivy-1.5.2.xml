@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="me.sgeb.opencash.vendor" module="poco" revision="1.5.2" status="integration" publication="20140120183153"/>
+  <info organisation="me.sgeb.opencash.vendor" module="poco" revision="1.5.2" status="integration" publication="20140125211221"/>
   <configurations/>
   <publications>
-    <artifact name="poco" type="nar" ext="nar" m:classifier="x86_64-apple-darwin13.0.0"/>
+    <artifact name="poco" type="nar" ext="nar" m:classifier="arm-linux-androideabi"/>
   </publications>
   <dependencies/>
 </ivy-module>
