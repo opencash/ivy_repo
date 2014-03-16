@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.opencash.vendor" module="gtest" revision="1.7.0" status="integration" publication="20140316070220"/>
-  <configurations/>
+  <info organisation="com.github.opencash.vendor" module="gtest" revision="1.7.0" status="integration" publication="20140316095608"/>
+  <configurations>
+    <conf name="android-arm" visibility="public"/>
+    <conf name="linux-amd64" visibility="public"/>
+    <conf name="osx-x86_64" visibility="public"/>
+  </configurations>
   <publications>
-    <artifact name="gtest" type="nar" ext="nar" m:classifier="osx-x86_64"/>
-    <artifact name="gtest" type="nar" ext="nar" m:classifier="linux-amd64"/>
-    <artifact name="gtest" type="nar" ext="nar" m:classifier="android-arm"/>
+    <artifact name="gtest" type="nar" ext="nar" conf="osx-x86_64" m:classifier="osx-x86_64"/>
+    <artifact name="gtest" type="nar" ext="nar" conf="linux-amd64" m:classifier="linux-amd64"/>
+    <artifact name="gtest" type="nar" ext="nar" conf="android-arm" m:classifier="android-arm"/>
   </publications>
   <dependencies/>
 </ivy-module>
