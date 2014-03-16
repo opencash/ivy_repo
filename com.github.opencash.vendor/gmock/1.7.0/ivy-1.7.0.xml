@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.opencash.vendor" module="gmock" revision="1.7.0" status="integration" publication="20140315121000"/>
+  <info organisation="com.github.opencash.vendor" module="gmock" revision="1.7.0" status="integration" publication="20140316063113"/>
   <configurations/>
   <publications>
     <artifact name="gmock" type="nar" ext="nar" m:classifier="osx-x86_64"/>
+    <artifact name="gmock" type="nar" ext="nar" m:classifier="linux-amd64"/>
     <artifact name="gmock" type="nar" ext="nar" m:classifier="android-arm"/>
   </publications>
   <dependencies/>

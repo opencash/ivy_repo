@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.opencash.vendor" module="sqlite3" revision="3080200" status="integration" publication="20140315121719"/>
+  <info organisation="com.github.opencash.vendor" module="sqlite3" revision="3080200" status="integration" publication="20140316062648"/>
   <configurations/>
   <publications>
+    <artifact name="sqlite3" type="nar" ext="nar" m:classifier="linux-amd64"/>
     <artifact name="sqlite3" type="nar" ext="nar" m:classifier="android-arm"/>
   </publications>
   <dependencies/>
