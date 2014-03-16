@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.opencash.vendor" module="poco" revision="1.5.2" status="integration" publication="20140316062204"/>
+  <info organisation="com.github.opencash.vendor" module="poco" revision="1.5.2" status="integration" publication="20140316065434"/>
   <configurations/>
   <publications>
     <artifact name="poco" type="nar" ext="nar" m:classifier="osx-x86_64"/>
