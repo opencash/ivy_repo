@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.opencash" module="libopencash" revision="0.1.0" status="integration" publication="20140317080547"/>
+  <info organisation="com.github.opencash" module="libopencash" revision="0.1.0" status="integration" publication="20140317124629"/>
   <configurations>
-    <conf name="default" visibility="public" extends="osx-x86_64-static-debug"/>
+    <conf name="android-arm-static-debug" visibility="public"/>
+    <conf name="default" visibility="public" extends="android-arm-static-debug,linux-amd64-static-debug,osx-x86_64-static-debug"/>
+    <conf name="linux-amd64-static-debug" visibility="public"/>
     <conf name="osx-x86_64-static-debug" visibility="public"/>
   </configurations>
   <publications>
+    <artifact name="libopencash" type="nar" ext="nar" conf="android-arm-static-debug" m:classifier="android-arm-static-debug"/>
+    <artifact name="libopencash" type="nar" ext="nar" conf="linux-amd64-static-debug" m:classifier="linux-amd64-static-debug"/>
     <artifact name="libopencash" type="nar" ext="nar" conf="osx-x86_64-static-debug" m:classifier="osx-x86_64-static-debug"/>
   </publications>
   <dependencies>
+    <dependency org="com.github.opencash.vendor" name="poco" rev="1.5.2" conf="android-arm-static-debug-&gt;android-arm"/>
+    <dependency org="com.github.opencash.vendor" name="libodb" rev="2.3.0" conf="android-arm-static-debug-&gt;android-arm"/>
+    <dependency org="com.github.opencash.vendor" name="libodb-sqlite" rev="2.3.0" conf="android-arm-static-debug-&gt;android-arm"/>
+    <dependency org="com.github.opencash.vendor" name="poco" rev="1.5.2" conf="linux-amd64-static-debug-&gt;linux-amd64"/>
+    <dependency org="com.github.opencash.vendor" name="libodb" rev="2.3.0" conf="linux-amd64-static-debug-&gt;linux-amd64"/>
+    <dependency org="com.github.opencash.vendor" name="libodb-sqlite" rev="2.3.0" conf="linux-amd64-static-debug-&gt;linux-amd64"/>
     <dependency org="com.github.opencash.vendor" name="poco" rev="1.5.2" conf="osx-x86_64-static-debug-&gt;osx-x86_64"/>
     <dependency org="com.github.opencash.vendor" name="libodb" rev="2.3.0" conf="osx-x86_64-static-debug-&gt;osx-x86_64"/>
     <dependency org="com.github.opencash.vendor" name="libodb-sqlite" rev="2.3.0" conf="osx-x86_64-static-debug-&gt;osx-x86_64"/>
