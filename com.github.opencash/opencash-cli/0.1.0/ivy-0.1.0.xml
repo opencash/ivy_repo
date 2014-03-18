@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.opencash" module="opencash-cli" revision="0.1.0" status="integration" publication="20140317202925"/>
+  <info organisation="com.github.opencash" module="opencash-cli" revision="0.1.0" status="integration" publication="20140317215437"/>
   <configurations>
     <conf name="android-arm-debug" visibility="public"/>
     <conf name="default" visibility="public" extends="android-arm-debug,linux-amd64-debug,osx-x86_64-debug"/>
