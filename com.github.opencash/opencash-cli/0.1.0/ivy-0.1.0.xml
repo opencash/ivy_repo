@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.opencash" module="opencash-cli" revision="0.1.0" status="integration" publication="20140319060011"/>
+  <info organisation="com.github.opencash" module="opencash-cli" revision="0.1.0" status="integration" publication="20140323142259"/>
   <configurations>
     <conf name="android-arm-debug" visibility="public"/>
     <conf name="default" visibility="public" extends="android-arm-debug,linux-amd64-debug,osx-x86_64-debug"/>
@@ -12,5 +12,9 @@
     <artifact name="opencash-cli" type="nar" ext="nar" conf="linux-amd64-debug" m:classifier="linux-amd64-debug"/>
     <artifact name="opencash-cli" type="nar" ext="nar" conf="osx-x86_64-debug" m:classifier="osx-x86_64-debug"/>
   </publications>
-  <dependencies/>
+  <dependencies>
+    <dependency org="com.github.opencash" name="libopencash" rev="0.1.0" conf="android-arm-debug-&gt;android-arm-static-debug"/>
+    <dependency org="com.github.opencash" name="libopencash" rev="0.1.0" conf="linux-amd64-debug-&gt;linux-amd64-static-debug"/>
+    <dependency org="com.github.opencash" name="libopencash" rev="0.1.0" conf="osx-x86_64-debug-&gt;osx-x86_64-static-debug"/>
+  </dependencies>
 </ivy-module>
