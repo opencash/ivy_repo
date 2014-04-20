@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.opencash.vendor" module="libodb-sqlite" revision="2.3.0" status="integration" publication="20140320062045"/>
+  <info organisation="com.github.opencash.vendor" module="libodb-sqlite" revision="2.3.0" status="integration" publication="20140420105422"/>
   <configurations>
     <conf name="android-arm" visibility="public"/>
+    <conf name="ios-arm" visibility="public"/>
+    <conf name="ios-i386" visibility="public"/>
     <conf name="linux-amd64" visibility="public"/>
     <conf name="osx-x86_64" visibility="public"/>
   </configurations>
@@ -10,6 +12,8 @@
     <artifact name="libodb-sqlite" type="nar" ext="nar" conf="osx-x86_64" m:classifier="osx-x86_64"/>
     <artifact name="libodb-sqlite" type="nar" ext="nar" conf="linux-amd64" m:classifier="linux-amd64"/>
     <artifact name="libodb-sqlite" type="nar" ext="nar" conf="android-arm" m:classifier="android-arm"/>
+    <artifact name="libodb-sqlite" type="nar" ext="nar" conf="ios-arm" m:classifier="ios-arm"/>
+    <artifact name="libodb-sqlite" type="nar" ext="nar" conf="ios-i386" m:classifier="ios-i386"/>
   </publications>
   <dependencies>
     <dependency org="com.github.opencash.vendor" name="libodb" rev="2.3.0" conf="osx-x86_64-&gt;osx-x86_64"/>
@@ -17,5 +21,7 @@
     <dependency org="com.github.opencash.vendor" name="sqlite3" rev="3080200" conf="linux-amd64-&gt;linux-amd64"/>
     <dependency org="com.github.opencash.vendor" name="libodb" rev="2.3.0" conf="android-arm-&gt;android-arm"/>
     <dependency org="com.github.opencash.vendor" name="sqlite3" rev="3080200" conf="android-arm-&gt;android-arm"/>
+    <dependency org="com.github.opencash.vendor" name="libodb" rev="2.3.0" conf="ios-arm-&gt;ios-arm"/>
+    <dependency org="com.github.opencash.vendor" name="libodb" rev="2.3.0" conf="ios-i386-&gt;ios-i386"/>
   </dependencies>
 </ivy-module>
